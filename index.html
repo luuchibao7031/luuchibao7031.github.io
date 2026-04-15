@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter và Hòn đá Phù thủy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+            /* Phông nền màn đêm ma thuật */
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
+            color: #2c241b;
+            display: flex;
+            justify-content: center;
+        }
+
+        .magic-parchment {
+            max-width: 850px;
+            background-color: #fbf5df; 
+            background-image: radial-gradient(circle, transparent 20%, #fbf5df 20%, #fbf5df 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fbf5df 20%, #fbf5df 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#f4ebd0 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #f4ebd0 8px, transparent 8px) -4px 0;
+            background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+            padding: 60px 70px;
+            border-radius: 5px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 0 60px rgba(139, 69, 19, 0.15);
+            position: relative;
+        }
+
+        /* Khung viền vàng trang trí ở các góc */
+        .magic-parchment::before, .magic-parchment::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #d3a625;
+            opacity: 0.7;
+        }
+        .magic-parchment::before {
+            top: 20px; left: 20px;
+            border-right: none; border-bottom: none;
+        }
+        .magic-parchment::after {
+            bottom: 20px; right: 20px;
+            border-left: none; border-top: none;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Đã đổi font */
+            color: #740001; 
+            text-align: center;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+            border-bottom: 2px dashed #d3a625; 
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .subtitle {
+            display: block;
+            font-size: 0.5em;
+            color: #555;
+            letter-spacing: 1px;
+            margin: 10px 0;
+            text-transform: lowercase;
+            font-variant: small-caps;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif; /* Đã đổi font */
+            color: #8b6508; 
+            font-size: 1.4em;
+            text-transform: uppercase;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 5px solid #740001;
+            padding-left: 15px;
+            background: linear-gradient(90deg, rgba(211, 166, 37, 0.15) 0%, rgba(255,255,255,0) 100%);
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        /* Hiệu ứng chữ cái đầu tiên to lên */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 10px;
+            padding-top: 5px;
+            font-family: 'Playfair Display', serif; /* Đã đổi font */
+            color: #740001;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        /* Highlight một số từ khóa */
+        .highlight {
+            font-weight: 600;
+            color:#740001;
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .magic-parchment { padding: 30px 20px; }
+            h1 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="magic-parchment">
+        <h1>Harry Potter <span class="subtitle">VÀ</span> Hòn đá Phù thủy</h1>
+
+        <h2>Cuộc sống ban đầu</h2>
+        <p class="drop-cap">Harry Potter là một cậu bé mồ côi sống cuộc đời bất hạnh và thường xuyên bị bắt nạt tại nhà của người dì dượng độc ác – gia đình Dursley. Cậu không hề biết gì về thân thế thực sự của mình.</p>
+
+        <h2>Bức thư nhập học</h2>
+        <p>Đúng vào sinh nhật lần thứ 11, một người khổng lồ lai tên là Rubeus Hagrid xuất hiện, trao cho cậu bức thư nhập học từ <span class="highlight">Trường Phù thủy và Pháp sư Hogwarts</span>. Hagrid cũng tiết lộ sự thật: Harry là một phù thủy. Cha mẹ cậu không chết vì tai nạn giao thông như lời dì dượng kể, mà bị sát hại bởi Chúa tể Hắc ám Voldemort. Harry là người duy nhất sống sót sau lời nguyền chết chóc đó, điều này khiến cậu trở nên nổi tiếng trong thế giới pháp thuật.</p>
+
+        <h2>Đến Hogwarts</h2>
+        <p>Tại trường Hogwarts, Harry được xếp vào nhà <span class="highlight">Gryffindor</span>. Cậu nhanh chóng kết bạn với Ron Weasley (một cậu bé trung thành, sinh ra trong gia đình phù thủy nghèo) và Hermione Granger (một cô bé thông minh, xuất thân từ gia đình Muggle - người không có phép thuật).</p>
+
+        <h2>Bí ẩn Hòn đá Phù thủy</h2>
+        <p>Trong năm học, bộ ba phát hiện ra rằng trường đang cất giấu "Hòn đá Phù thủy" - một bảo vật có khả năng tạo ra thuốc trường sinh bất tử. Nó đang được bảo vệ bởi rất nhiều cạm bẫy ma thuật rắc rối.</p>
+
+        <h2>Cuộc đối đầu</h2>
+        <p>Nghĩ rằng vị giáo sư khó tính Snape đang cố gắng đánh cắp hòn đá để giúp Voldemort hồi sinh, Harry, Ron và Hermione đã quyết định tự mình vượt qua các chướng ngại vật để bảo vệ nó. Tuy nhiên, khi đến căn phòng cuối cùng, Harry phát hiện ra kẻ thực sự muốn trộm hòn đá là Giáo sư Quirrell – người đang bị tàn hồn của Voldemort thao túng và ký sinh trên cơ thể.</p>
+
+        <h2>Kết thúc</h2>
+        <p>Bằng lòng dũng cảm và sự bảo vệ từ tình yêu ma thuật của người mẹ quá cố, Harry đã đánh bại Quirrell, khiến Voldemort một lần nữa phải bỏ trốn. Năm học kết thúc, nhà Gryffindor giành được Cúp Nhà, và Harry phải tạm biệt bạn bè để quay lại nhà Dursley nghỉ hè, nhưng giờ đây cậu đã biết thế giới thực sự của mình ở đâu.</p>
+        <div class="author-signature">
+            Người thực hiện: 
+            <span class="author-name">Lưu Chí Bảo</span>
+        </div>
+    </div>
+</body>
+</html>
